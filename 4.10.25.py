@@ -44,12 +44,12 @@
 #print(a[0],a[1],a[2], sep=":")
 
 #задача 8
-#text="python"
-#text=list(text)
-#print(text)
+text="python"
+text=list(text)
+print(text)
 
 #задача 9
-my_tuple = (1,2,3,4)
-a=list(my_tuple)
-print(id(my_tuple), id(a), sep=";")
-b=tuple(a)
+#my_tuple = (1,2,3,4)
+#a=list(my_tuple)
+#print(id(my_tuple), id(a), sep=";")
+#b=tuple(a)
