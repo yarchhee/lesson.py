@@ -113,15 +113,15 @@
 # Пользователем вводятся две различные клеки шахматной доски,
 # напишите программу, которая определит, может ли конь попасть с первой
 # клетки во вторую одним ходом.
-# x1 = int(input())
-# y1= int(input())
-# x2 = int(input())
-# y2= int(input())
-# sx = abs(x2-x1)
-# sy = abs(y2-y1)
-# if (sx == 2 and sy == 1) or (sx == 1 and sy == 2):
-#     print("YES")
-# else:
-#     print("NO")
+x1 = int(input())
+y1= int(input())
+x2 = int(input())
+y2= int(input())
+sx = abs(x2-x1)
+sy = abs(y2-y1)
+if (sx == 2 and sy == 1) or (sx == 1 and sy == 2):
+    print("YES")
+else:
+    print("NO")
 
 
