@@ -6,3 +6,4 @@ def yarik(a,b):
 
 result = list(map(yarik, a1, a2))
 print(result)
+
