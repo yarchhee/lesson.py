@@ -164,22 +164,16 @@
 # оператора выведится True если
 # число кратно пяти.
 #  Иначе выводится False
-# x=int(input())
-# if x%5==0:
-#     print("True")
-# else:
-#     print("False")
+# x=int(float(input())
+# print(True if x%5==0 else false)
 
 # 2.
 # Используя тернарный оператор,
 # выведите "Да", если число
 # находится в диапазоне от 10 до 20
 # включительно, иначе "Нет"
-# a=int(input())
-# if 10<=a<=20:
-#     print("DA")
-# else:
-#     print("NET")
+# a=int(float(input())
+# print( True if 10<=a<=20 else "нет")
 
 # 1.
 # Создайте переменную name и присвойте к
