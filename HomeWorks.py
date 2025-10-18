@@ -260,24 +260,40 @@
 # Например:
 # Ввод: 31
 # Вывод: 4
-# x=int(input())
-# x1=x%10
-# x2=x//10
-# print(x1+x2)
+# a=input()
+# z=0
+# for i in a:
+#     z+=int(i)
+# print(z)
 
 # 3.
 # Пользователь вводит несколько чисел через пробел.
 # Найдите первое число больше 100. Если его нет, выведите "Таких чисел нет".
-x=input().split()
-for i in x:
-    if int(i)>100:
-        print(i)
-    if int(i)<100:
-        print("Таких чисел нет")
-
+# a=input().split(" ")
+# z=False
+# for i in a:
+#     if int(i)>100:
+#         print(i)
+#         z=True
+#         break
+# if z==False or z!=True or not(z):
+#     print("Таких чисел нет")
 
 # 4.
 # Пользователь вводит число. Найдите его первый делитель,
 # отличный от 1. Если делителей нет, выведите "Число простое".
-x=int(input())
+# a=int(input())
+# b=False
+# for i in range(2,a):
+#     if a%i==0:
+#         b=True
+#         print(i)
+#         break
+# if not(b):
+#     print("Число простое")
 
+# 5.
+for i in range(1,5):
+    for j in range((4-i),-1,-1):
+        print("*"*i+" "*j)
+        break
