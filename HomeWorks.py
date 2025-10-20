@@ -293,7 +293,16 @@
 #     print("Число простое")
 
 # 5.
-for i in range(1,5):
-    for j in range((4-i),-1,-1):
-        print("*"*i+" "*j)
-        break
+#for i in range(1,5):
+#    for j in range((4-i),-1,-1):
+ #       print("*"*i+" "*j)
+  #      break
+
+# 1. Создайте программу которая перебирает все
+# комбинации 3х значного пароля из символов латиницы
+x="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+for i in x:
+
+
+
+
