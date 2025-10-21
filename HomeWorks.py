@@ -300,8 +300,49 @@
 
 # 1. Создайте программу которая перебирает все
 # комбинации 3х значного пароля из символов латиницы
-x="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
-for i in x:
+# x="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+# for i in x:
+#     for a in x:
+#         for b in x:
+#             s=i+a+b
+#             print(s)
+
+#2. Создайте цикл который нарисует изображение
+# *
+# **
+# ***
+# ****
+# Если пользователь ввел yes
+# И выведет строку не нарисую если пользователь введет слово отличное
+# от yes после чего будет опять ожидать ввода после yes цикл должен остановиться
+a=input("Рисвоать? :")
+if a == "yes":
+    for i in range(1,5):
+        for j in range((4-i),-1,-1):
+            print("*"*i+" "*j)
+            break
+
+#3.Создайте калькулятор пользователь вводит два числа и символ **,-,+,/,* программа
+#выдает результат и останавливается только если пользователь ввел вместо сивола stop
+# a=int(input())
+# b=int(input())
+# c=input()
+# while c != "stop":
+#     if c == "**":
+#         print(a**b)
+#
+#     elif c == "+":
+#         print(a+b)
+#     elif c == "*":
+#         print(a*b)
+#     elif c == "/":
+#         print(a/b)
+#     elif c == "-":
+#         print(a-b)
+#     a = int(input())
+#     b = int(input())
+#     c = input()
+
 
 
 
