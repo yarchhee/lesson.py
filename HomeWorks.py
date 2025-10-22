@@ -330,7 +330,6 @@
 # while c != "stop":
 #     if c == "**":
 #         print(a**b)
-#
 #     elif c == "+":
 #         print(a+b)
 #     elif c == "*":
