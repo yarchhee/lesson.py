@@ -13,5 +13,11 @@
 #        break
 
 #
-st=int(input())
-print(st/100)
+ns=1000
+st=10/100
+t=3
+counter=0
+while counter<t:
+    ns = (ns*st)+ns
+    print(round(ns,3))
+    counter+=1
