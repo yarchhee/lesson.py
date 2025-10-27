@@ -29,7 +29,7 @@ string="hello world"
 
 print(string.find("w"))# поиск первого схождения подстроки
 print(string.index("d"))# возвращает индекс подстроки если такого символа нет ошибка
-#print(string.rfind("w"))# поиск схождения с последнего символа
+print(string.rfind("w"))# поиск схождения с последнего символа
 print(string.split(" "))# делит строку по разделителю " "
 print(string.count(" ")) #считает количество подстрок
 print(string.lower()) #делает текст в нижнем регистре
