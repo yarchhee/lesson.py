@@ -13,11 +13,18 @@
 #        break
 
 #
-ns=1000
-st=10/100
-t=3
-counter=0
-while counter<t:
-    ns = (ns*st)+ns
-    print(round(ns,3))
-    counter+=1
+#
+
+# a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+# for i in a:
+#     if i<5:
+#         print(i)
+
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+for i in a:
+    for j in b:
+        if i==j:
+            print(i, end=",")
+
+
