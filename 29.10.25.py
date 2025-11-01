@@ -70,8 +70,7 @@ for i in set(a):
     forward = a.rfind(i)
     if (backward-forward) > maxim:
         maxim=backward - forward
-        indexes[0] = backward
-        indexes[1] = forward
+        indexes = a[forward+1:backward]
 print(indexes)
 
 
