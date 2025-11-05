@@ -511,10 +511,22 @@
 # Напишите программу для определения максимума и минимума списка
 # Создайте список из 5 случайных элементов, выведите в консоль сам список
 # минимум и максимум, не используйте встроенные методы
-from random import randint
-for i in range(5):
-    dig = randint(0,10000000)
-    print()
+# from random import randint
+# maxim = 0
+# minim = 100
+# a=[
+#     randint(1,100),
+#     randint(1,100),
+#     randint(1,100),
+#     randint(1,100),
+#     randint(1,100),
+# ]
+# for i in a:
+#     if maxim < i:
+#         maxim = i
+#     if minim > i:
+#         minim = i
+# print(a,maxim,minim)
 
 # 3.
 # Пользователь вводит строку, найти количество
@@ -523,11 +535,12 @@ for i in range(5):
 # Ввод: hellhooh
 # Вывод: 3
 # #hellh,hooh,hellhooh
-a = input()
-amount = 0
-for i in set(a):
-    count=a.count(i)
-    if count>amount:
-        alpha=i
-        amount=count
-        print(alpha)
+# s = input().strip(" ")
+# count = 0
+# len_s = len(s)
+# for i in range(len_s):
+#     for j in range(i+1, len_s):
+#         if s[i] == s[j] and j - i > 1:
+#             count += 1
+# print(count)
+
