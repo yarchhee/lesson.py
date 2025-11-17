@@ -1,9 +1,9 @@
 #Задача 29
-# from random import randint
-# l = []
-# for i in range(5):
-#     l.append(randint(0,10))
-# print(l)
+from random import randint
+l = []
+for i in range(20):
+    l.append(randint(0,10))
+print(set(l))
 # # s = l[0]
 # # l[0] = l[-1]
 # # l[-1] = s
