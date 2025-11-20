@@ -70,13 +70,14 @@
 # books.update({"Фантастика":10})
 
 # Задание 79
-# marks = {"Информатика":5,
-#          "Математика":5,
-#          "Русский":3,
-#          "История":4,
-#          "Физика":4}
-# ball = list(marks.values())
-# sr = sum(ball)/len(ball)
+marks = {"Информатика":5,
+         "Математика":5,
+         "Русский":3,
+         "История":4,
+         "Физика":4}
+ball = list(marks.values())
+sr = sum(ball)/len(ball)
+print(ball)
 
 #Задача 80
 # a = input().split(" ")
