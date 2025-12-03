@@ -752,3 +752,57 @@
 # for i in d:
 #     dict.update({i:b.count(i)})
 # print(dict)
+
+# 1.
+# Напишите функцию, которая принимает натуральное
+# число и возвращает его факториал (используя цикл!).
+# def factorial(n):
+#     fac = 1
+#     for i in range(2,n+1):
+#         fac = i * fac
+#     return fac
+# print(factorial(int(input())))
+
+# 2.
+# Напишите функцию number_to_digits(n), которая
+# принимает натуральное число и возвращает список его цифр.
+# def number_to_digits(n):
+#     spisok = []
+#     for i in n:
+#         spisok += list(i)
+#     return spisok
+# print(number_to_digits(input()))
+
+# 3.
+# Напишите функцию is_prime(n), которая принимает целое число
+# и возвращает True для простых чисел или False для чисел, не
+# являющихся простыми. Цикл для поиска простых чисел:
+# def is_prime(n):
+#     import math
+#     for i in range(2, ):
+
+# 4.
+# Напишите функцию camel_to_snake(s), которая принимает
+# строку в «верблюжьем регистре» (ThisIsCamelCased) и преобразует
+# ее в «змеиный регистр» (this_is_camel_cased)
+# def camel_to_snake(s):
+#     for char in s:
+#         if char.isupper():
+#             char.replace(char.lower()  "_")
+#             return s
+# print(camel_to_snake("ThisIsCamelCased"))
+
+# 1.Напишите функцию которая принимает натуральное число а возвращает список его цифр
+# def f(n):
+#     list = []
+#     for i in n:
+#         list.append(i)
+#     return list
+# print(f(input()))
+
+# 2.Напишите функцию которая принимает текст и именнованные аргументы,
+# и возвращает словарь с подсчетом слов с учетом опций, опции задаются через
+# именнованные аргументы например, ignore_case = True, придумать 2 опции для посчета
+# слов, опции могут быть не обязательными
+
+
