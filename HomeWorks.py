@@ -839,16 +839,19 @@
 # 3. Создайте файл в режиме 'w' с 50 строками случайных чисел от 1 до 100.
 # В режиме 'a' добавьте 20 строк. Прочитайте все в режиме 'r' с readlines() и
 # выведите сумму всех чисел.
-from random import randint
-a = 0
-with open("test.txt","w")as file:
-    for i in range(50):
-        file.write(str(randint(1,100)))
+# from random import randint
+# a = 0
+# with open("test.txt","w")as file:
+#     for i in range(50):
+#         file.write(str(randint(1,100)) + "\n")
 # with open("test.txt","a")as file:
 #     for i in range(20):
-#         file.write(str(randint(1,100)))
+#         file.write(str(randint(1,100)) + "\n")
 # with open("test.txt","r")as file:
-#     print(file.readlines())
-
+#     a = file.readlines()
+#     sumi = 0
+#     for i in a:
+#         sumi = sumi + int(i)
+#     print(sumi)
 
 
