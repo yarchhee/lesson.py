@@ -1,7 +1,13 @@
-from math import *
-alphabet = 26 + 26 + 10
-bit = ceil(log2(alphabet))
-byteslovo = ceil(bit * 16 / 8)
-for i in range(1,100000):
-    if (byteslovo + 20) * i <= 10 * 1024:
-        print(i)
+x = 5*216**1156 - 4*36**1147 + 6**1153 - 875
+stri = []
+kol5 = 0
+kol0 = 0
+while x > 0:
+    stri += str(x%6)
+    x = x//6
+for i in stri:
+    if i == "5":
+        kol5 += 1
+    elif i == "0":
+        kol0 += 1
+print(kol5 - kol0)
