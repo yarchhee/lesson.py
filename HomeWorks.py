@@ -854,4 +854,30 @@
 #         sumi = sumi + int(i)
 #     print(sumi)
 
+# 1.Откройте файл 902, содержащий в каждой строке четыре натуральных числа.
+# Определите количество строк, содержащих числа, для которых выполнены оба условия:
+# наибольшее из четырёх чисел меньше суммы трёх других;
+# среди четырёх чисел есть только одна пара равных чисел
+with open("902.txt", "r") as f:
+    counter = 0
+    for line  in f:
+        s = line.split()
+        d = []
+        for i in s:
+            d.append(int(i))
+        d = sorted(d)
+        if d[-1] > sum(d[:-1]):
+            counter += 1
+        flag = True
+        counter_amount = 0
+        for i in range(len(d)):
+            counter_cash = -1
+            for j in range(len(d)):
+                if d[i] == d[j]:
+                    counter_cash += 1
+            if d[-1] > sum(d[:-1]):
+
+
+
+
 
