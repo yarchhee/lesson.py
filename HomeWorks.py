@@ -858,24 +858,70 @@
 # Определите количество строк, содержащих числа, для которых выполнены оба условия:
 # наибольшее из четырёх чисел меньше суммы трёх других;
 # среди четырёх чисел есть только одна пара равных чисел
-with open("902.txt", "r") as f:
-    counter = 0
-    for line  in f:
+# with open("902.txt", "r") as f:
+#     counter = 0
+#     for line  in f:
+#         s = line.split()
+#         d = []
+#         for i in s:
+#             d.append(int(i))
+#         d = sorted(d)
+#         if d[-1] > sum(d[:-1]):
+#             counter += 1
+#         flag = True
+#         counter_amount = 0
+#         for i in range(len(d)):
+#             counter_cash = -1
+#             for j in range(len(d)):
+#                 if d[i] == d[j]:
+#                     counter_cash += 1
+#             if d[-1] > sum(d[:-1]):
+
+# Откройте файл 907, содержащий в каждой строке пять натуральных чисел. Определите
+# количество строк таблицы, для чисел которых выполнены оба условия:
+# в строке все числа различны;
+# сумма двух наибольших чисел строки не больше суммы трёх её оставшихся чисел.
+# with open('907.txt','r') as f:
+#     total_amount = 0
+#     for line in f:
+#         s = line.split()
+#         d = []
+#         for i in s:
+#             d.append(int(i))
+#         d = sorted(d)
+#         if d[-1] + d[-2] <= d[0] + d[1] + d[2]:
+#             total_amount += 1
+#         if d[0] != d[-1] != d[-2] != d[1] != d[2]:
+#             total_amount += 1
+#     print(total_amount)
+
+# Откройте файл 908, содержащий вещественные числа – результаты ежечасного
+# измерения концентрации примесей в воде очистных установок на протяжении трёх месяцев.
+# Найдите разность между минимальным значением концентрации примесей на протяжении трёх
+# месяцев и средним арифметическим значение концентрации примесей в этот период времени.
+with open("908.txt", 'r') as f:
+    max = 0
+    min = 99999
+    sumi = 0
+    k = 0
+    for line in f:
         s = line.split()
         d = []
         for i in s:
             d.append(int(i))
         d = sorted(d)
-        if d[-1] > sum(d[:-1]):
-            counter += 1
-        flag = True
-        counter_amount = 0
-        for i in range(len(d)):
-            counter_cash = -1
-            for j in range(len(d)):
-                if d[i] == d[j]:
-                    counter_cash += 1
-            if d[-1] > sum(d[:-1]):
+        for i in d:
+            if i > max:
+                max = i
+            if i < min:
+                min = i
+            sumi += i
+            k += 1
+    print(max - min)
+    print(sumi/k)
+
+
+
 
 
 

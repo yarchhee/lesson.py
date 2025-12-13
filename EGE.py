@@ -1,11 +1,13 @@
-from string import *
-d = []
-for x in printable[:21]:
-    for y in printable[:21]:
-        a = int(f'32{y}{x}a', 21) + int(f'16{y}18', 21)
-        if a % 12 == 0 and int(y,21) % 2 != 0:
-            print(a , x, y)
-
+m = []
+for x in range(1,7291):
+    k = 0
+    a = 27**298 + 27**269 - x
+    while a > 0:
+        if a%27 == 0:
+            k+=1
+        a//=27
+    m.append(k)
+print(max(m))
 
 
 
