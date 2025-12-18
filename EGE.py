@@ -1,11 +1,12 @@
-a = 9**12 + 3**8 - 3
-b = []
-while a>0:
-    b.append(a%3)
-    a = a//3
-print(b.count(2))
-
-
+a = open("9.txt")
+total = 0
+for string in a:
+    d = string.split()
+    d = list(map(int, d))
+    print(d)
+    for i in d:
+        if d.count(i) == 3 and i%2 != 0:
+            total += 1
 
 
 
