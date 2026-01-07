@@ -18,20 +18,24 @@
 #         k+=1
 # print(k)
 
-# def replace(st, old, new):
-#     string = ""
-#     if old not in st:
-#         return False
-#     while i < len(st)
-#     for i in range(len(st)):
-#         flag = False
-#         for j in range(len(old)):
-#             if st[i+j] != old[j]:
-#                 flag = True
-#                 break
-#         if not flag:
-#             string += new
-#         return string
+def replace(st, old, new):
+    string = "" #итоговая строка
+    if old not in st: #Подсроки есть в строке?
+        return False
+    i = 0 #индекс элемента текущего
+    while i < len(st): #пока индекс меньше текущей длинны
+        flag = False #Найдены ли совпадения?
+        for j in range(len(old)):
+            if st[i + j] != old[j]:# ищем посимвольно из исходной и строки
+                flag = True #совпадений не найдено
+                break
+        if not flag:#если найдено совпадение
+            string += new#добавляем в строку новую подстроку
+            i += len(old) #прибавляем на длинну старой строки
+        else:#если совпадений не найдено
+            string += st[i] #добавляем в текущую строку символ
+            i += 1#перешагиваем на следующий символ
+    return string
 
 
 

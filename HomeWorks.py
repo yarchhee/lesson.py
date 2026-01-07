@@ -935,15 +935,32 @@
 # в целом любой вариант который изменит обзий принцип работы
 # кода можешь использовать метод isLower или попробовать с обратной
 # стороны индекс прибавлять (изменить цикл) я зачту
-a = input()
-b = ""
-for i in a:
-    if 97 <= ord(i) <= 122:
-        b+=i
-    else:
-        b+=chr(ord(i) + 32)
-print(b)
+# a = input()
+# b = ""
+# for i in a:
+#     if 97 <= ord(i) <= 122:
+#         b+=i
+#     else:
+#         b+=chr(ord(i) + 32)
+# print(b)
 
+# Реализуйте метод find(). На вход поступают строка st и подстрока
+# substring (вводятся пользователем). Необходимо найти индекс первого
+# вхождения substring в st. Если подстрока не найдена, вернуть -1.
+# def replace(st, substring):
+#     if substring not in st:
+#         return '-1'
+#     i = 0
+#     while i < len(st):
+#         flag = False
+#         for j in range(len(substring)):
+#             if st[i + j] != substring[j]:
+#                 flag = True
+#                 break
+#         if not flag:
+#             return i
+#         else:
+#             return "-1"
 
 
 
