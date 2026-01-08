@@ -1012,7 +1012,7 @@
 # k = 0
 # for i in matrix:
 #     k+=1
-#     for j in i:
+#     for j in i
 #         if j == 0:
 
 
