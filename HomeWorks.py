@@ -1009,12 +1009,14 @@
 # содержит ли каждая строка хотя бы один ноль и есть ли ноль хотя бы в одной строке.
 # Если есть, выведите индексы строк с нулями.
 # matrix = [[1, 2, 3], [4, 0, 6], [7, 8, 9]]
-# k = 0
-# for i in matrix:
-#     k+=1
-#     for j in i
-#         if j == 0:
-
+# b = []
+# for i, values in enumerate(matrix):
+#     if 0 in values:
+#         print(i)
+#         b.append(True)
+#     else:
+#         b.append(False)
+# print(all(b))
 
 
 
