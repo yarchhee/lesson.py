@@ -20,10 +20,10 @@
 #     for j in range(10):
 #         b.append(i*j)
 
-# matrix = [[row * col for col in range(1,4)] for row in range(1,4)]
-# flatten_matrix = [item for row in matrix for item in row]
-# print(matrix)
-# print(flatten_matrix)
+matrix = [[row * col for col in range(1,4)] for row in range(1,4)]
+flatten_matrix = [item for row in matrix for item in row]
+print(matrix)
+print(flatten_matrix)
 
 # dict_test = {i : i**2 for i in range(1,6)}
 # print(dict_test)
