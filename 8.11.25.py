@@ -1,9 +1,9 @@
 #Задача 29
-from random import randint
-l = []
-for i in range(20):
-    l.append(randint(0,10))
-print(set(l))
+# from random import randint
+# l = []
+# for i in range(20):
+#     l.append(randint(0,10))
+# print(set(l))
 # # s = l[0]
 # # l[0] = l[-1]
 # # l[-1] = s
@@ -28,26 +28,26 @@ print(set(l))
 #         break
 # print(k[0], k[1], a.index(k[0]))
 
-#Задача 21
-a = input().split()
-h = []
-for i in a:
-    if i not in h and a.count(i) < 2:
-        h.append(i)
-print(h)
-
-#Задача 31
-a = [2,4,2,9,8,3,4,2,1,9,3,2,8,5,9]
-maxim = 0
-cash = []
-for i in range(len(a)):
-    seen = []
-    for j in range(i, len(a)):
-        if a[j] in seen:
-            break
-        seen.append(a[j])
-    if len(seen) > maxim:
-        maxim = len(seen)
-        cash = seen
-print(maxim, sum(cash),cash)
+# #Задача 21
+# a = input().split()
+# h = []
+# for i in a:
+#     if i not in h and a.count(i) < 2:
+#         h.append(i)
+# print(h)
+#
+# #Задача 31
+# a = [2,4,2,9,8,3,4,2,1,9,3,2,8,5,9]
+# maxim = 0
+# cash = []
+# for i in range(len(a)):
+#     seen = []
+#     for j in range(i, len(a)):
+#         if a[j] in seen:
+#             break
+#         seen.append(a[j])
+#     if len(seen) > maxim:
+#         maxim = len(seen)
+#         cash = seen
+# print(maxim, sum(cash),cash)
 
