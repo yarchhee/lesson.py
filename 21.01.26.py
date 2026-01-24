@@ -64,12 +64,12 @@
 # nums = [1,2,3,4,5,6,7,8,9, 10,11,12]
 # not_prime_nums = list(filter(lambda num: num%2 == 0 or num%3 == 0 or num%5 == 0 or num & 7 == 0 , nums))
 
-def my_map(func, iterable):
-    result = []
-    for item in iterable:
-        result.append(func(item))
-    return result
-nums = ["hello"]
-print(my_map(len, nums))
+# def my_map(func, iterable):
+#     result = []
+#     for item in iterable:
+#         result.append(func(item))
+#     return result
+# nums = ["hello"]
+# print(my_map(len, nums))
 
 
