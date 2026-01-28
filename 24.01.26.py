@@ -108,13 +108,13 @@
 # print(a())
 # print(a())
 
-def create_length_filter(min_length):
-    def length_filter(word):
-        return len(word) >= min_length
-    return length_filter
-a = create_length_filter(5)
-print(a('hel'))
-print(a('hello'))
+# def create_length_filter(min_length):
+#     def length_filter(word):
+#         return len(word) >= min_length
+#     return length_filter
+# a = create_length_filter(5)
+# print(a('hel'))
+# print(a('hello'))
 
 
 

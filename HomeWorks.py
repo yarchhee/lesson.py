@@ -1154,4 +1154,48 @@
 # matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 # a = list(map(matrix, filter(lambda x : x % 2 == 0, matrix)))
 # print(a)
+#
+# 1. Создайте функцию с замыканием make_stats_tracker(),
+# которая возвращает четыре функции: для добавления числа,
+# получения среднего значения, получения минимума и максимума.
+# Функция должна эффективно отслеживать все необходимые статистики.
+# def make_stats_tracker():
+#     numbers = []
+#     total = 0
+#     def add(value):
+#         nonlocal total
+#         numbers.append(value)
+#         # total += value
+#         print(f"Добавлен новый элемент {value}")
+#     def avg():
+#         return sum(numbers) / len(numbers)
+#     def get_numbers():
+#         return numbers
+#     def maximum():
+#         return max(numbers)
+#     def minimum():
+#         return min(numbers)
+#     return add, get_numbers, avg, maximum, minimum
+# add_value, get_func_numbers, avg, maximum, minimum = make_stats_tracker()
+# add_value(1)
+# add_value(2)
+# add_value(3)
+# add_value(4)
+# add_value(5)
+# print(get_func_numbers(), avg(), maximum(), minimum())
+
+# def apply_to_each(fnumbers, operation):
+#     result = []
+#     for num in fnumbers:
+#         processed = operation(num)
+#         result.append(processed)
+#     return result
+# def square(number):
+#     return number **2
+# numbers = [1, 2, 3, 4, 5]
+# square_result = apply_to_each(numbers, square)
+# print(square_result)
+
+
+
 
