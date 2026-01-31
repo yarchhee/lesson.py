@@ -1196,6 +1196,34 @@
 # square_result = apply_to_each(numbers, square)
 # print(square_result)
 
+# Создайте декоратор retry(max_retries, delay), который принимает два аргумента: максимальное
+# количество попыток и задержку между попытками. Декоратор должен принимать от функции возвращаемое
+# значение, и если значение False, то запускать функцию снова через количество секунд,
+# переданное в параметре delay, пока возвращаемое значение не будет True, при этом количество
+# перезапусков не должно превышать значения, переданного в параметре max_retrie.
+
+# import time
+# def retry(a):
+#     def wrapper(max_retries, delay):
+#         for i in range(max_retries):
+#             print(f"Попытка подключения ")
+#             result = a()
+#             return result if result else time.sleep(delay)
+#     return wrapper
+#
+# @retry
+# def test():
+#     return False
+# print(test(3,3))
+# print(test(3,3))
+# print(test(3,3))
+# print(test(3,3))
+
+
+
+
+
+
 
 
 

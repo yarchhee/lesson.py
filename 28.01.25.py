@@ -17,6 +17,7 @@ def create_logging_wrapper(func):
         print(f"Вызвана функция {func.__name__} с аргументом {args}, результат: {result}")
         return result
     return wrapper
+
 @create_logging_wrapper
 def add(a, b):
 

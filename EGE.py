@@ -456,7 +456,69 @@
 #     if i>8:
 #         k+=1
 # print(s)
+# k = 0
+#
+# from itertools import *
+# for x in set(permutations("СОРТИРОВКА")):
+#     s = "".join(x)
+#     for i  in "ОИА":
+#         s = s.replace(i, "А")
+#     for io in "СРТВК":
+#         s = s.replace(io, "Б")
+#     if "ААА" not in s and "БББ" not in s:
+#         k = k + 1
+# print(k)
+# k = 0
+# from itertools import *
+# for x in product(sorted("МИНУС"), repeat = 4):
+#     s = "".join(x)
+#     k+=1
+#     gl = [i for i in s if i in "ИУ"]
+#     sogl = [i for i in s if i in "МНС"]
+#     # for i in s:
+#     #     if i in "ИУ":
+#     #         s = s.replace(i, "Г")
+#     #     if i in "МНС":
+#     #         s = s.replace(i, "С")
+#     if len(gl)<=len(sogl):
+#         print(k)
 
-
-
-
+# from itertools import *
+# def vow_more_cons(word):
+#     vow = "ИУ"
+#     cons = "МНС"
+#     # Считаем количество гласных
+#     vcount = 0
+#     for char in word:
+#         if char in vow:
+#             vcount += 1
+#
+#     # Считаем количество согласных
+#     ccount = 0
+#     for char in word:
+#         if char in cons:
+#             ccount += 1
+#
+#     # Возвращаем True, если гласных больше, иначе False
+#     return ccount >= vcount
+#
+# answers=[]
+# k=0
+# for x in product(sorted('МИНУС'),repeat=4):
+#     s=''.join(x)
+#     k=k+1
+#     if (vow_more_cons(s)==True):
+#         answers.append(k)
+#         print(k,s)
+#     # print(s)
+# print(max(answers))
+k = 0
+counter = 0
+from itertools import *
+for x in product(sorted("СОЛНЦЕ"), repeat = 6):
+    s = "".join(x)
+    k += 1
+    if k%2 == 0:
+        if s[0] not in "ОЕ" and s.count("Ц") == 2:
+            counter += 1
+print(counter)
