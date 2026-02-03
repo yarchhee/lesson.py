@@ -1220,8 +1220,25 @@
 # print(test(3,3))
 
 
+# Напишите рекурсивную функцию для вычисления a^n (a в степени n).
+# def func(a, n):
+#     if n == 0:
+#         return 1
+#     return a * func(a, n-1)
+# print(func(5, 2))
 
+# Напишите рекурсивную функцию для нахождения суммы цифр числа.
+# def sumivar(n):
+#     if len(str(n)) == 1:
+#         return n
+#     return n%10 + sumivar(n//10)
+# print(sumivar(25))
 
+# Напишите рекурсивную функцию для нахождения максимального элемента в списке.
+def maxi(spisok):
+    if len(spisok) == 1:
+        return spisok[0]
+    return
 
 
 

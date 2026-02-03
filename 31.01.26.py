@@ -19,9 +19,9 @@
 #
 # school_ref(school)
 
-a = [[1,2,3],
-    [4,5],
-     [6,7]]
+# a = [[1,2,3],
+#     [4,5],
+#      [6,7]]
 # def rec(b):
 #     # if type(b) == int:
 #     #     return b + rec(b)
@@ -47,19 +47,19 @@ a = [[1,2,3],
 #         return s
 #     return reverse_rec(s[::-1])
 # print(reverse_rec('hello'))
-import time
-start1 = time.time()
-def fact(s):
-    result = 1
-    for i in range(s):
-        result *= i
-    return result
-print(fact(5))
-print(time.time()-start1)
-start2 = time.time()
+# import time
+# start1 = time.time()
+# def fact(s):
+#     result = 1
+#     for i in range(s):
+#         result *= i
+#     return result
+# print(fact(5))
+# print(time.time()-start1)
+# start2 = time.time()
 def factorial_rec(n):
     if n == 1:
         return n
     return n * factorial_rec(n - 1)
 print(factorial_rec(5))
-print(time.time()-start2)
+# print(time.time()-start2)
