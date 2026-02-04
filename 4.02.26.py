@@ -48,11 +48,20 @@ sys.setrecursionlimit(10000)
 #         return 2*n*f(n-1)
 # print((f(2024)//16 - f(2023)) / f(2022))
 
+# @lru_cache()
+# def tribonacci(n):
+#     if n <2:
+#         return n
+#     if n == 2:
+#         return 1
+#     return tribonacci(n - 1) + tribonacci(n - 2) + tribonacci(n - 3)
+# print(tribonacci(10))
+
 @lru_cache()
-def tribonacci(n):
-    if n <2:
-        return n
-    if n == 2:
+def stairs(n):
+    if n == 0:
         return 1
-    return tribonacci(n - 1) + tribonacci(n - 2) + tribonacci(n - 3)
-print(tribonacci(10))
+    if n == 1:
+        return 1
+    return stairs(n - 1) + stairs(n - 2)
+print(stairs(100))
