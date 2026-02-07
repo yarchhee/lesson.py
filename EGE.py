@@ -512,13 +512,43 @@
 #         print(k,s)
 #     # print(s)
 # print(max(answers))
-k = 0
-counter = 0
-from itertools import *
-for x in product(sorted("СОЛНЦЕ"), repeat = 6):
-    s = "".join(x)
-    k += 1
-    if k%2 == 0:
-        if s[0] not in "ОЕ" and s.count("Ц") == 2:
-            counter += 1
-print(counter)
+# k = 0
+# counter = 0
+# from itertools import *
+# for x in product(sorted("СОЛНЦЕ"), repeat = 6):
+#     s = "".join(x)
+#     k += 1
+#     if k%2 == 0:
+#         if s[0] not in "ОЕ" and s.count("Ц") == 2:
+#             counter += 1
+# print(counter)
+
+# k = 0
+# for line in open('999'):
+#     k+=1
+#     a = list(map(int, line.split()))
+#     a4 = [i for i in a if a.count(i) == 4]
+#     an = [i for i in a if a.count(i) == 1]
+#     if len(a4) == 4 and len(an) == 3:
+#         if sum(an) < sum(a4):
+#             print(k)
+#
+# print("x y z w F")
+# for x in range(2):
+#     for y in range(2):
+#         for z in range(2):
+#             for w in range(2):
+#                 F = int(w and (( y<=x ) <= z))
+#                 print(x, y, z, w, F)
+
+# x y z w F
+# 0 0 1 1 1
+# 0 1 0 1 1
+# 0 1 1 0 0
+# 0 1 1 1 1
+# 1 0 0 1 0
+# 1 0 1 0 0
+# 1 0 1 1 1
+# 1 1 0 0 0
+# 1 1 0 1 0
+# 1 1 1 0 0

@@ -1235,12 +1235,39 @@
 # print(sumivar(25))
 
 # Напишите рекурсивную функцию для нахождения максимального элемента в списке.
-def maxi(spisok):
-    if len(spisok) == 1:
-        return spisok[0]
-    return
+# def maxi(spisok):
+#     if len(spisok) == 1:
+#         return spisok[0]
+#     return
 
-
+# 1. Решите задачу о Ханойских башнях для n дисков. Выведите последовательность ходов.
+# Головоломка “Ханойские башни” состоит из трех стержней, пронумерованных числами 1, 2, 3.
+# На стержень 1 надета пирамидка из n дисков различного диаметра в порядке возрастания диаметра.
+# Диски можно перекладывать с одного стержня на другой по одному, при этом диск нельзя класть на
+# диск меньшего диаметра. Необходимо переложить всю пирамидку со стержня 1 на стержень 3 за
+# минимальное число перекладываний.
+# import sys
+# sys.setrecursionlimit(100000)
+# from functools import lru_cache
+# @lru_cache(maxsize=None)
+# def hanoi(n, source,target, auxiliary, moves = None):
+#     if moves is None:
+#         moves = []
+#     if n == 1:
+#         moves.append(f"Переместить диск 1 с {source} на {target}")
+#
+#     hanoi(n-1,source,auxiliary,target,moves)
+#
+#     moves.append(f"Переместить диск {n} с {source} на {target} ")
+#
+#     hanoi(n-1,auxiliary,target,source,moves)
+#
+#     return moves
+# moves = hanoi(3, "A", "B", "C")
+#
+# for move in moves:
+#     print(move)
+# print(f"Всего ходов {moves}")
 
 
 
