@@ -552,3 +552,28 @@
 # 1 1 0 0 0
 # 1 1 0 1 0
 # 1 1 1 0 0
+
+print("x y z w")
+for x in range(2):
+    for y in range(2):
+        for z in range(2):
+            for w in range(2):
+                if ((not(w)) and (y or z <= (not(x)) and y)) == 1:
+                    print(x, y, z, w)
+
+# x y z w
+# 0 1 1 0 0
+# 0 1 1 1 0
+
+# 1 1 0 1 0
+
+# from itertools import *
+# def f(x,y,w,z):
+#     return (z == (not(x))) <= ((w <= (not(y))) and (y <= x))
+# for a1,a2,a3,a4, a5 in product([0,1], repeat=4):
+#     table = [(1,1,1,0), (a1,a2,0,0), (a3,0,a4,a5)
+#     if len(set(table))==3:
+#         for p in permutations('xywz'):
+#             if [f(**dict(zip(p,r))) for r in table]==[1,0,0]:
+#                 print(p)
+

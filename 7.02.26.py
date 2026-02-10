@@ -93,18 +93,24 @@ import asyncio
 #     for content in pages:
 #         print(content)
 # asyncio.run(main())
-import time
-import asyncio
-async def make_coffe():
-    await asyncio.sleep(2)
-    print("Coffee is ready")
-async def make_toast():
-    await asyncio.sleep(2)
-    print("Toast is ready")
-start = time.time()
-async def main():
-    await make_coffe()
-    await make_toast()
-asyncio.run(main())
-finish = time.time() - start
-print(finish)
+
+
+
+
+# import time
+# import asyncio
+# async def make_coffe():
+#     await asyncio.sleep(2)
+#     print("Coffee is ready")
+
+# async def make_toast():
+#     await asyncio.sleep(2)
+#     print("Toast is ready")
+# start = time.time()
+
+# async def main():
+#     await make_coffe()
+#     await make_toast()
+# asyncio.run(main())
+# finish = time.time() - start
+# print(finish)

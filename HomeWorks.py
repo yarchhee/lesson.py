@@ -1270,4 +1270,41 @@
 # print(f"Всего ходов {moves}")
 
 
+# 1.Создайте функцию calculate(x, delay), которая ждёт
+# delay секунд и возвращает квадрат числа x. Запустите три
+# вызова параллельно для чисел 2, 3, 4 с задержками 1, 2, 1
+# секунда соответственно. Выведите все результаты.
+import time
+import asyncio
+# async def calculate(x, delay):
+#     await asyncio.sleep(delay)
+#     print(x)
+#
+# async def main():
+#     await calculate(2, 1)
+#     await calculate(3, 2)
+#     await calculate(4, 1)
+# asyncio.run(main())
+
+# 2.Создайте функцию long_task(), которая ждёт 5 секунд. Запустите её как задачу,
+# подождите 2 секунды и отмените задачу. Выведите сообщение об отмене.
+
+# async def long_task():
+#     await asyncio.sleep(5)
+
+
+# 3.Создайте функцию fetch_data(api_name, delay), которая возвращает строку
+# "Данные из {api_name}". Запустите 4 запроса параллельно с разными задержками delay
+# (1, 2, 1.5, 0.5 секунд) и выведите все результаты.
+
+async def fetch_data(api_name, delay):
+    print(f"Данные из {api_name}")
+    await asyncio.sleep(delay)
+
+async def main():
+    await fetch_data("ABC", 1)
+    await fetch_data("DEF", 2)
+    await fetch_data("GHI", 1.5)
+    await fetch_data("JKL", 0.5)
+asyncio.run(main())
 
